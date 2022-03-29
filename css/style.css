@@ -48,6 +48,7 @@ header .menu-nav {
 }
 
 /* MAIN */
+/* Banner */
 main .banner {
     background-color: #1abc9c;
     display: flex;
@@ -63,4 +64,43 @@ main .banner {
 
 .banner .banner-text {
     text-align: center;
+}
+
+/* Main Content */
+.main-content-text {
+    text-align: center;
+}
+
+.main-content-img {
+    width: 100%;
+    height: 300px;
+    background-color: lightpink;
+}
+
+/* About */
+.bg_green-water {
+    background-color: #1abc9c;
+
+}
+
+.about {
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.download-btn {
+    width: 100px;
+    height: 40px;
+    background-color: lightblue;
+}
+
+/* Contact Me */
+.contact-me {
+    width: 50%;
+    margin: 0 auto;
 }
