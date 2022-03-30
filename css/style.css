@@ -108,6 +108,11 @@ header .menu-nav li {
 
 }
 
+/* HOVER */
+.menu-nav li :hover {
+    color: #dfdfdf;
+}
+
 /* MAIN */
 /* Banner */
 main .banner-content {
@@ -131,18 +136,40 @@ main .banner {
 }
 
 /* Main Content */
-.main-content-text {
+.ms_main-content-text {
     text-align: center;
 }
 
-.main-content-img {
+.ms_main-content-img {
     width: 100%;
-    /* overflow: hidden;
-    border-radius: 20px; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
-.main-content-img img {
+.ms_main-content-img img {
     border-radius: 20px;
+}
+
+.ms_with-overlay {
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+/* HOVER */
+#portfolio .ms_main-content-img:hover .ms_with-overlay {
+    display: flex;
+    cursor: pointer;
+
 }
 
 /* About */
@@ -164,8 +191,17 @@ main .banner {
 
 .ms_download-btn {
     background-color: #1abc9c;
-
     border: 1px solid white;
+    transition: .2s;
+}
+
+/* HOVER */
+#about .ms_btn:hover  {
+    background-color: white;
+}
+
+#about .ms_btn:hover a {
+    color: #1abc9c;
 }
 
 
@@ -178,6 +214,8 @@ main .banner {
 .contact-me .send-btn {
     display: inline-block;
     background-color: #1abc9c;
+    border: 1px solid transparent;
+    transition: .2s;
 }
 
 .ms_contact-input {
@@ -186,6 +224,17 @@ main .banner {
     border-radius: 0;
     padding-left: 0; /*Non Va*/
 }
+
+/* HOVER */
+#contact .ms_btn:hover {
+    background-color: white;
+    border: 1px solid #1abc9c;
+} 
+
+#contact .ms_btn:hover a {
+    color: #1abc9c;
+} 
+
 
 /* FOOTER */
 footer {
@@ -205,6 +254,28 @@ footer {
     border-radius: 50%;
     line-height: 50px;
     margin: 0 .5rem;
+    transition: .2s;
+}
+
+.footer-top .ms_social-tag a {
+    color: white;
+}
+
+
+
+/* HOVER */
+.footer-top .ms_social-tag:hover{
+    border: 1px solid transparent;
+    background-color: white;
+}
+
+.footer-top .ms_social-tag:hover a {
+    color: #3a546d;
+}
+
+.footer-top .ms_link:hover {
+    color: #1abc9c;
+    text-decoration: underline;
 }
 
 @media all and (min-width: 768px) {
@@ -233,3 +304,4 @@ footer {
 .footer-bottom p {
     line-height: 100px;
 }
+
